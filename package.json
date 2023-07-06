@@ -1,0 +1,56 @@
+{
+  "name": "mitosis-boilerplate",
+  "version": "0.0.1",
+  "description": "An unofficial open-source template for building cross-framework component libraries with Mitosis",
+  "author": {
+    "name": "Tzvi Melamed",
+    "email": "tzvi@melamed.biz",
+    "url": "https://www.tzvipm.dev/"
+  },
+  "license": "MIT",
+  "packageManager": "yarn@3.6.1",
+  "devDependencies": {
+    "@builder.io/eslint-plugin-mitosis": "^0.0.14",
+    "@builder.io/mitosis": "^0.0.109",
+    "@builder.io/mitosis-cli": "^0.0.67",
+    "@storybook/addon-essentials": "7.0.26",
+    "@storybook/addon-interactions": "7.0.26",
+    "@storybook/addon-links": "7.0.26",
+    "@storybook/blocks": "7.0.26",
+    "@storybook/react": "7.0.26",
+    "@storybook/react-vite": "7.0.26",
+    "@storybook/testing-library": "0.0.14-next.2",
+    "@types/eslint": "^8.40.2",
+    "@yarnpkg/sdks": "^3.0.0-rc.48",
+    "commitlint": "^17.6.6",
+    "commitlint-config-gitmoji": "^2.3.1",
+    "cz-emoji-conventional": "^1.0.1",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-storybook": "^0.6.12",
+    "gitmoji-changelog": "^2.3.0",
+    "prettier": "^3.0.0",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.0.26",
+    "ts-morph": "^19.0.0",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "format": "prettier . --write",
+    "build": "mitosis build",
+    "release": "gitmoji-changelog",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "resolutions": {
+    "@builder.io/mitosis@^0.0.108": "patch:@builder.io/mitosis@npm%3A0.0.108#./.yarn/patches/@builder.io-mitosis-npm-0.0.108-620520afbe.patch",
+    "@builder.io/mitosis@0.0.108": "patch:@builder.io/mitosis@npm%3A0.0.108#./.yarn/patches/@builder.io-mitosis-npm-0.0.108-620520afbe.patch"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-emoji-conventional"
+    }
+  }
+}
