@@ -20,29 +20,51 @@
     "@storybook/react": "7.0.26",
     "@storybook/react-vite": "7.0.26",
     "@storybook/testing-library": "0.0.14-next.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@types/eslint": "^8.40.2",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "@vitejs/plugin-react": "^4.0.2",
     "@yarnpkg/sdks": "^3.0.0-rc.48",
     "commitlint": "^17.6.6",
     "commitlint-config-gitmoji": "^2.3.1",
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
     "cz-emoji-conventional": "^1.0.1",
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-storybook": "^0.6.12",
     "gitmoji-changelog": "^2.3.0",
+    "jsdom": "^22.1.0",
     "prettier": "^3.0.0",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "storybook": "7.0.26",
     "ts-morph": "^19.0.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vite": "^4.4.1",
+    "vitest": "^0.33.0",
+    "watch": "^1.0.2"
   },
   "scripts": {
-    "format": "prettier . --write",
-    "build": "mitosis build",
+    "dev": "concurrently \"yarn:watch:mitosis\" \"yarn:storybook\"",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "ci": "concurrently \"yarn:format\" \"yarn:lint\"",
+    "ci:fix": "yarn run lint:fix && yarn run format:fix",
+    "build": "yarn run build:mitosis && yarn run build:storybook",
+    "build:mitosis": "mitosis build",
+    "watch:mitosis": "watch 'yarn run build:mitosis' ./src",
     "release": "gitmoji-changelog",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "cross-env TS_NODE_PROJECT=tsconfig.storybook.json storybook dev -p 6006",
+    "build:storybook": "storybook build"
   },
   "resolutions": {
     "@builder.io/mitosis@^0.0.108": "patch:@builder.io/mitosis@npm%3A0.0.108#./.yarn/patches/@builder.io-mitosis-npm-0.0.108-620520afbe.patch",
@@ -52,5 +74,8 @@
     "commitizen": {
       "path": "node_modules/cz-emoji-conventional"
     }
+  },
+  "dependencies": {
+    "unocss": "^0.53.4"
   }
 }

@@ -1,7 +1,9 @@
 export type Props = {
-    name?: string;
-}
+  name?: string;
+};
 
 export default function Hello(props: Props) {
-    return <div>Hello {props.name ?? 'World'}!</div>
+  return (
+    <div className="text-red-900">Hello&nbsp;{props.name ?? 'World'}!</div>
+  );
 }
