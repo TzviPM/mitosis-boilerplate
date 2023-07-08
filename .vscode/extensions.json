@@ -3,6 +3,9 @@
     "arcanis.vscode-zipfs",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "vivaxy.vscode-conventional-commits"
+    "vivaxy.vscode-conventional-commits",
+    "vue.volar",
+    "svelte.svelte-vscode",
+    "antfu.unocss"
   ]
 }
