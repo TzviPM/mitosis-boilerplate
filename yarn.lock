@@ -6786,6 +6786,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chalk@npm:4.1.2, chalk@npm:^4.0.0, chalk@npm:^4.0.2, chalk@npm:^4.1.0, chalk@npm:^4.1.1, chalk@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "chalk@npm:4.1.2"
+  dependencies:
+    ansi-styles: ^4.1.0
+    supports-color: ^7.1.0
+  checksum: fe75c9d5c76a7a98d45495b91b2172fa3b7a09e0cc9370e5c8feb1c567b85c4288e2b3fded7cfdd7359ac28d6b3844feb8b82b8686842e93d23c827c417e83fc
+  languageName: node
+  linkType: hard
+
 "chalk@npm:^2.0.0, chalk@npm:^2.3.2, chalk@npm:^2.4.1, chalk@npm:^2.4.2":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
@@ -6804,16 +6814,6 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: 8e3ddf3981c4da405ddbd7d9c8d91944ddf6e33d6837756979f7840a29272a69a5189ecae0ff84006750d6d1e92368d413335eab4db5476db6e6703a1d1e0505
-  languageName: node
-  linkType: hard
-
-"chalk@npm:^4.0.0, chalk@npm:^4.0.2, chalk@npm:^4.1.0, chalk@npm:^4.1.1, chalk@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "chalk@npm:4.1.2"
-  dependencies:
-    ansi-styles: ^4.1.0
-    supports-color: ^7.1.0
-  checksum: fe75c9d5c76a7a98d45495b91b2172fa3b7a09e0cc9370e5c8feb1c567b85c4288e2b3fded7cfdd7359ac28d6b3844feb8b82b8686842e93d23c827c417e83fc
   languageName: node
   linkType: hard
 
@@ -7173,7 +7173,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commitizen@npm:^4.0.3, commitizen@npm:^4.2.4":
+"commitizen@npm:^4.0.3, commitizen@npm:^4.3.0":
   version: 4.3.0
   resolution: "commitizen@npm:4.3.0"
   dependencies:
@@ -7674,13 +7674,13 @@ __metadata:
   linkType: hard
 
 "cz-emoji-conventional@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "cz-emoji-conventional@npm:1.0.1"
+  version: 1.0.2
+  resolution: "cz-emoji-conventional@npm:1.0.2"
   dependencies:
-    chalk: ^4.1.1
-    commitizen: ^4.2.4
+    chalk: 4.1.2
+    commitizen: ^4.3.0
     word-wrap: ^1.2.3
-  checksum: daa638ecdf8a84865449d97cb564813dbdc85a3445a179a433447bde9e3e8ff1cea7692887ae16233b9a6777f570048815a39c6f197bf7daed674f487f09cefe
+  checksum: cfe4d7608c445d2dff6430ae15c2480c9048ebaa6c8fea25df32e99a51c8e24e69f96401e12e5e55705681d319db64ebc28e0466444de5d080c518e5ba759cae
   languageName: node
   linkType: hard
 
