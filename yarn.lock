@@ -1957,12 +1957,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@builder.io/mitosis-cli@npm:^0.0.67":
-  version: 0.0.67
-  resolution: "@builder.io/mitosis-cli@npm:0.0.67"
+"@builder.io/mitosis-cli@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@builder.io/mitosis-cli@npm:0.1.0"
   dependencies:
     "@babel/core": ^7.17.8
-    "@builder.io/mitosis": 0.0.109
+    "@builder.io/mitosis": 0.1.0
     "@vue/compiler-sfc": ^3.1.5
     babel-preset-solid: ^1.3.13
     chalk: ^4.1.0
@@ -1980,15 +1980,50 @@ __metadata:
     micromatch: ^4.0.4
     parse5: ^3.0.3
     prettier: ^2.6.1
+    rimraf: ^5.0.5
+    ts-morph: ^19.0.0
     vue-template-es2015-compiler: ^1.9.1
     vue-template-validator: ^1.1.5
   bin:
     mitosis: bin/mitosis
-  checksum: 967acac4833c04588c233a437272a61b7b0ad741e848b60b26b43fbfeba746a5c910a4024307466d2fdf8be3e2d90346c62086976a982bc71522ed8af9faa7a7
+  checksum: 900da3b751ae360cf8c354c5f2a8028f886fd530217625c31948c78e5655bd8143eb3d3ffa4d91261cebb3b939b469ed3c407955e09e6db4e107982c23574446
   languageName: node
   linkType: hard
 
-"@builder.io/mitosis@npm:0.0.109, @builder.io/mitosis@npm:^0.0.109":
+"@builder.io/mitosis@npm:0.1.0":
+  version: 0.1.0
+  resolution: "@builder.io/mitosis@npm:0.1.0"
+  dependencies:
+    "@angular/compiler": ^11.2.11
+    "@babel/core": 7.14.5
+    "@babel/generator": ^7.14.3
+    "@babel/plugin-proposal-class-properties": ^7.13.0
+    "@babel/plugin-syntax-decorators": ^7.12.1
+    "@babel/plugin-syntax-typescript": ^7.20.0
+    "@babel/plugin-transform-react-jsx": ^7.13.12
+    "@babel/preset-typescript": ^7.13.0
+    "@builder.io/sdk": ^2.1.1
+    astring: ^1.8.3
+    csstype: ^3.0.4
+    fp-ts: ^2.11.10
+    hash-sum: ^2.0.0
+    json5: ^2.1.3
+    lodash: ^4.17.20
+    object-hash: ^2.0.3
+    prettier: ">=2.0.0 <3.0.0"
+    prettier-plugin-organize-imports: ^3.2.3
+    prettier-plugin-svelte: ^2.10.0
+    svelte: ^3.30.0
+    svelte-preprocess: ^5.0.3
+    traverse: ^0.6.6
+    ts-morph: ^19.0.0
+    typescript: ^5.3.2
+    vue: ~2.6
+  checksum: 83b1a5debc034adf1842b79b9dbd17350a59dbc8817c0919b4d89d0e18679b5f247cbfe6f915eab40d53aa32eca2c048bdb2a4e894a99a5c415a21fcea53b5c8
+  languageName: node
+  linkType: hard
+
+"@builder.io/mitosis@npm:^0.0.109":
   version: 0.0.109
   resolution: "@builder.io/mitosis@npm:0.0.109"
   dependencies:
@@ -2068,6 +2103,17 @@ __metadata:
     node-fetch: ^2.3.0
     tslib: ^1.10.0
   checksum: 82f0a66e914451193a1e7d406136a6d1e6f4bc35248ea18f91e1efccba4d0f4b833a7b15bf0c689816f17c3250c5a7feade2f700a6116d872a0c1861bd5419cd
+  languageName: node
+  linkType: hard
+
+"@builder.io/sdk@npm:^2.1.1":
+  version: 2.2.2
+  resolution: "@builder.io/sdk@npm:2.2.2"
+  dependencies:
+    hash-sum: ^2.0.0
+    node-fetch: ^2.3.0
+    tslib: ^1.10.0
+  checksum: 4048f54685af56d79ef56d5c7e726bc6c0262cb3d4c190c28241673211e88ef6e98258e9f36476cc8966600f05b3c09b10d58c2ec8bc44b84d776c82c1f07ce8
   languageName: node
   linkType: hard
 
@@ -3037,7 +3083,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/sourcemap-codec@npm:^1.4.10, @jridgewell/sourcemap-codec@npm:^1.4.13, @jridgewell/sourcemap-codec@npm:^1.4.15":
+"@jridgewell/sourcemap-codec@npm:^1.4.10, @jridgewell/sourcemap-codec@npm:^1.4.13, @jridgewell/sourcemap-codec@npm:^1.4.14, @jridgewell/sourcemap-codec@npm:^1.4.15":
   version: 1.4.15
   resolution: "@jridgewell/sourcemap-codec@npm:1.4.15"
   checksum: b881c7e503db3fc7f3c1f35a1dd2655a188cc51a3612d76efc8a6eb74728bef5606e6758ee77423e564092b4a518aba569bbb21c9bac5ab7a35b0c6ae7e344c8
@@ -4688,6 +4734,13 @@ __metadata:
   version: 2.0.6
   resolution: "@types/pug@npm:2.0.6"
   checksum: e8d09c3ddc7e6b87050a16d73694518f259a8ed74a0ab79b81b847baf89d92d44959ed68199966ac6f4a218c715c9bb3e4c86c8800d4868a4a674f4b21d2f01d
+  languageName: node
+  linkType: hard
+
+"@types/pug@npm:^2.0.6":
+  version: 2.0.10
+  resolution: "@types/pug@npm:2.0.10"
+  checksum: c82b921778f2d6f96ec30a55de50b2b87bd13bb0c143bf1a718fadb6f689603f21e577822222ff363590700103a66bbc42689505706af67bd83ed585ff972531
   languageName: node
   linkType: hard
 
@@ -9982,6 +10035,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:^10.3.7":
+  version: 10.3.10
+  resolution: "glob@npm:10.3.10"
+  dependencies:
+    foreground-child: ^3.1.0
+    jackspeak: ^2.3.5
+    minimatch: ^9.0.1
+    minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
+    path-scurry: ^1.10.1
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 4f2fe2511e157b5a3f525a54092169a5f92405f24d2aed3142f4411df328baca13059f4182f1db1bf933e2c69c0bd89e57ae87edd8950cba8c7ccbe84f721cf3
+  languageName: node
+  linkType: hard
+
 "glob@npm:^5.0.3":
   version: 5.0.15
   resolution: "glob@npm:5.0.15"
@@ -11402,6 +11470,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jackspeak@npm:^2.3.5":
+  version: 2.3.6
+  resolution: "jackspeak@npm:2.3.6"
+  dependencies:
+    "@isaacs/cliui": ^8.0.2
+    "@pkgjs/parseargs": ^0.11.0
+  dependenciesMeta:
+    "@pkgjs/parseargs":
+      optional: true
+  checksum: 57d43ad11eadc98cdfe7496612f6bbb5255ea69fe51ea431162db302c2a11011642f50cfad57288bd0aea78384a0612b16e131944ad8ecd09d619041c8531b54
+  languageName: node
+  linkType: hard
+
 "jake@npm:^10.6.1, jake@npm:^10.8.5":
   version: 10.8.7
   resolution: "jake@npm:10.8.7"
@@ -12497,6 +12578,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"magic-string@npm:^0.30.5":
+  version: 0.30.7
+  resolution: "magic-string@npm:0.30.7"
+  dependencies:
+    "@jridgewell/sourcemap-codec": ^1.4.15
+  checksum: bdf102e36a44d1728ec61b69d655caba3f66ca58898e292f6debe57dc30896bd37908bfe3464a7464a435831a9e44aa905cebd681e21c2f44bbe4dddf225619f
+  languageName: node
+  linkType: hard
+
 "make-dir@npm:^2.0.0, make-dir@npm:^2.1.0":
   version: 2.1.0
   resolution: "make-dir@npm:2.1.0"
@@ -13007,6 +13097,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minipass@npm:^5.0.0 || ^6.0.2 || ^7.0.0":
+  version: 7.0.4
+  resolution: "minipass@npm:7.0.4"
+  checksum: 87585e258b9488caf2e7acea242fd7856bbe9a2c84a7807643513a338d66f368c7d518200ad7b70a508664d408aa000517647b2930c259a8b1f9f0984f344a21
+  languageName: node
+  linkType: hard
+
 "minizlib@npm:^1.3.3":
   version: 1.3.3
   resolution: "minizlib@npm:1.3.3"
@@ -13050,7 +13147,7 @@ __metadata:
   dependencies:
     "@builder.io/eslint-plugin-mitosis": ^0.0.14
     "@builder.io/mitosis": ^0.0.109
-    "@builder.io/mitosis-cli": ^0.0.67
+    "@builder.io/mitosis-cli": ^0.1.0
     "@storybook/addon-essentials": 7.0.26
     "@storybook/addon-interactions": 7.0.26
     "@storybook/addon-links": 7.0.26
@@ -14234,6 +14331,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"path-scurry@npm:^1.10.1":
+  version: 1.10.1
+  resolution: "path-scurry@npm:1.10.1"
+  dependencies:
+    lru-cache: ^9.1.1 || ^10.0.0
+    minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
+  checksum: e2557cff3a8fb8bc07afdd6ab163a92587884f9969b05bbbaf6fe7379348bfb09af9ed292af12ed32398b15fb443e81692047b786d1eeb6d898a51eb17ed7d90
+  languageName: node
+  linkType: hard
+
 "path-to-regexp@npm:0.1.7":
   version: 0.1.7
   resolution: "path-to-regexp@npm:0.1.7"
@@ -14527,6 +14634,23 @@ __metadata:
     prettier: ">=2.0"
     typescript: ">=2.9"
   checksum: 2298fcae0f16fd1a095cc3a33ba5d51b679b291518d404ad5eaca56fdcfbd55d35e26c5adffcb8664bfb45c2339b551b385cf03f48888c46d0348843d96024e1
+  languageName: node
+  linkType: hard
+
+"prettier-plugin-organize-imports@npm:^3.2.3":
+  version: 3.2.4
+  resolution: "prettier-plugin-organize-imports@npm:3.2.4"
+  peerDependencies:
+    "@volar/vue-language-plugin-pug": ^1.0.4
+    "@volar/vue-typescript": ^1.0.4
+    prettier: ">=2.0"
+    typescript: ">=2.9"
+  peerDependenciesMeta:
+    "@volar/vue-language-plugin-pug":
+      optional: true
+    "@volar/vue-typescript":
+      optional: true
+  checksum: 57ae97d7e403445e650ae92b7da586761d1d88a47e46b3ea274baeb96782165bebd0132db9c652081e185c41b50701ba1d30d615ad1c9000300cc0c67eb12b7a
   languageName: node
   linkType: hard
 
@@ -15539,6 +15663,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rimraf@npm:^5.0.5":
+  version: 5.0.5
+  resolution: "rimraf@npm:5.0.5"
+  dependencies:
+    glob: ^10.3.7
+  bin:
+    rimraf: dist/esm/bin.mjs
+  checksum: d66eef829b2e23b16445f34e73d75c7b7cf4cbc8834b04720def1c8f298eb0753c3d76df77325fad79d0a2c60470525d95f89c2475283ad985fd7441c32732d1
+  languageName: node
+  linkType: hard
+
 "rimraf@npm:~2.6.2":
   version: 2.6.3
   resolution: "rimraf@npm:2.6.3"
@@ -16046,6 +16181,20 @@ __metadata:
   bin:
     sorcery: bin/index.js
   checksum: e23fc06336c6e47274bd5e23849f8a7a40071d06a6fe1105f2557eb8613563b4c867230fd5f7b143e86a9bf45f62279e39ce68545482821d7b51b185133f2bc9
+  languageName: node
+  linkType: hard
+
+"sorcery@npm:^0.11.0":
+  version: 0.11.0
+  resolution: "sorcery@npm:0.11.0"
+  dependencies:
+    "@jridgewell/sourcemap-codec": ^1.4.14
+    buffer-crc32: ^0.2.5
+    minimist: ^1.2.0
+    sander: ^0.5.0
+  bin:
+    sorcery: bin/sorcery
+  checksum: b79a4194f5ab7ee1d19d5cd2a683bd605762d5cbeeb238f46a71af357a179a6193d64a92ef2af1e05e4261cb3797be8694ad9b7ecfea9ca0d8f14d98f449dff5
   languageName: node
   linkType: hard
 
@@ -16595,6 +16744,52 @@ __metadata:
     typescript:
       optional: true
   checksum: 51a0820c14bcc411ddf3b1cf4c772e73873626ed0b6c54dfca9e06bd6a6b22c9502436df3f1a4dab9eb3a404bba95002fd70cadea29a84fc36da3071309a8b91
+  languageName: node
+  linkType: hard
+
+"svelte-preprocess@npm:^5.0.3":
+  version: 5.1.3
+  resolution: "svelte-preprocess@npm:5.1.3"
+  dependencies:
+    "@types/pug": ^2.0.6
+    detect-indent: ^6.1.0
+    magic-string: ^0.30.5
+    sorcery: ^0.11.0
+    strip-indent: ^3.0.0
+  peerDependencies:
+    "@babel/core": ^7.10.2
+    coffeescript: ^2.5.1
+    less: ^3.11.3 || ^4.0.0
+    postcss: ^7 || ^8
+    postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
+    pug: ^3.0.0
+    sass: ^1.26.8
+    stylus: ^0.55.0
+    sugarss: ^2.0.0 || ^3.0.0 || ^4.0.0
+    svelte: ^3.23.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
+    typescript: ">=3.9.5 || ^4.0.0 || ^5.0.0"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    coffeescript:
+      optional: true
+    less:
+      optional: true
+    postcss:
+      optional: true
+    postcss-load-config:
+      optional: true
+    pug:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    typescript:
+      optional: true
+  checksum: 8d3f26f07f83481f21736a13db09139a57df37e20b1120ac22b98e31c15da175933b6ab3fbe8315e8ace8bfcc27c5bb9ad20b90b0f5722d3852c842f76120275
   languageName: node
   linkType: hard
 
@@ -17216,6 +17411,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:^5.3.2":
+  version: 5.3.3
+  resolution: "typescript@npm:5.3.3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 2007ccb6e51bbbf6fde0a78099efe04dc1c3dfbdff04ca3b6a8bc717991862b39fd6126c0c3ebf2d2d98ac5e960bcaa873826bb2bb241f14277034148f41f6a2
+  languageName: node
+  linkType: hard
+
 "typescript@patch:typescript@^4.6.4 || ^5.0.0#~builtin<compat/typescript>, typescript@patch:typescript@^5.1.6#~builtin<compat/typescript>":
   version: 5.1.6
   resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"
@@ -17233,6 +17438,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 1f8f3b6aaea19f0f67cba79057674ba580438a7db55057eb89cc06950483c5d632115c14077f6663ea76fd09fce3c190e6414bb98582ec80aa5a4eaf345d5b68
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^5.3.2#~builtin<compat/typescript>":
+  version: 5.3.3
+  resolution: "typescript@patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=14eedb"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: f61375590b3162599f0f0d5b8737877ac0a7bc52761dbb585d67e7b8753a3a4c42d9a554c4cc929f591ffcf3a2b0602f65ae3ce74714fd5652623a816862b610
   languageName: node
   linkType: hard
 
